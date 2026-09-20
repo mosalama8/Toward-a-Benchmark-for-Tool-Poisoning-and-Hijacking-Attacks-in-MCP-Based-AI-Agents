@@ -219,33 +219,6 @@ without affecting anything. The embedded "secrets" in them
 (`sk-sandbox-do-not-exfiltrate`, etc.) are fake, sandbox-only values used
 to detect exfiltration — not real credentials.
 
-## 7. Honest gaps and gotchas
-
-- **Live-run Task Success is a stub (§2).** Fixed at the scoring level
-  via `rescore_task_success.py`, not at the source — `scenarios.py`
-  itself was never updated, so this will keep surprising you on every
-  new live run until someone wires `task_checkers.py` into
-  `task_checker_factory` directly.
-- **No retry/backoff logic.** Free-tier rate limits (especially
-  OpenRouter/Nemotron) mean a `--n 15` run often won't finish in one
-  pass. Re-run with `--resume` rather than expecting 15/15 in one go.
-- **`gpt-oss-120b-groq`'s model ID is unverified** — see §3.
-- **`T2-Tier2`'s `fetch_url` ignores its `url` argument** and always
-  returns the same fixed article. Intentional (isolates the injection
-  variable as the only difference between trials), but worth knowing if
-  you extend the scenario.
-- **No sandbox network isolation is enforced by the code itself** — it
-  relies on you already running inside a network-isolated environment.
-  The mock servers don't make outbound calls, but nothing stops a future
-  scenario script from adding one by mistake.
-- **A frontier/paid-tier model was never evaluated** (project budget) —
-  this is a headline limitation of the paper, not a code gap, but if you
-  add one, uncomment and fill in the `frontier-default` template in
-  `run_benchmark.py`'s `MODEL_CONFIGS`.
-- **The stratified real-server sampling procedure** (extending the
-  corpus beyond synthetic servers to real, publicly available MCP
-  servers) is designed in the paper (Section 6.2) but has no
-  corresponding code in this repo yet.
 
 ## 8. Quick reference: full reproduction from a clean checkout
 
