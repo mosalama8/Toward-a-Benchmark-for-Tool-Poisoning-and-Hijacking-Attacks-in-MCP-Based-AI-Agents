@@ -1,0 +1,390 @@
+{
+  "description": "Table 4 (Task Utility Retention) recomputed from raw trace files via task_checkers.py, canonical 5-model corpus only.",
+  "per_scenario": {
+    "T1-Tier1": {
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 14,
+        "task_success_rate_pct": 93.3
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T2-Tier1": {
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T3-Tier1": {
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 11,
+        "task_success_rate_pct": 73.3
+      },
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T1-Tier2": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 0,
+        "task_success_rate_pct": 0.0
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 12,
+        "task_success_rate_pct": 80.0
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T2-Tier2": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 14,
+        "task_success_rate_pct": 93.3
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T3-Tier2": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 10,
+        "task_success_rate_pct": 66.7
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T4-Tier2": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 14,
+        "task_success_rate_pct": 93.3
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T2-Tier3": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 5,
+        "task_success_rate_pct": 33.3
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T3-Tier3": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 14,
+        "task_success_rate_pct": 93.3
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 10,
+        "task_success_rate_pct": 66.7
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T4-Tier3": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 14,
+        "task_success_rate_pct": 93.3
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 14,
+        "task_success_rate_pct": 93.3
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T5-Tier3": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 14,
+        "task_success_rate_pct": 93.3
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T5-Tier4": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 12,
+        "task_success_rate_pct": 80.0
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "T6-Tier4": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 10,
+        "task_success_rate_pct": 66.7
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 8,
+        "task_success_rate_pct": 53.3
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      }
+    },
+    "TBD-Tier5": {
+      "Gemini Flash-Lite": {
+        "n": 15,
+        "task_success_count": 15,
+        "task_success_rate_pct": 100.0
+      },
+      "Nemotron-3-Super": {
+        "n": 15,
+        "task_success_count": 13,
+        "task_success_rate_pct": 86.7
+      },
+      "Llama 3.3 70B (Groq)": {
+        "n": 15,
+        "task_success_count": 0,
+        "task_success_rate_pct": 0.0
+      },
+      "OpenAI: gpt-oss-20b (free)": {
+        "n": 15,
+        "task_success_count": 0,
+        "task_success_rate_pct": 0.0
+      },
+      "OpenAI: gpt-oss-120b (Groq)": {
+        "n": 15,
+        "task_success_count": 0,
+        "task_success_rate_pct": 0.0
+      }
+    }
+  },
+  "mean_by_model": {
+    "Llama 3.3 70B (Groq)": 80.0,
+    "Nemotron-3-Super": 91.4,
+    "OpenAI: gpt-oss-20b (free)": 72.4,
+    "Gemini Flash-Lite": 100.0,
+    "OpenAI: gpt-oss-120b (Groq)": 92.9
+  }
+}
