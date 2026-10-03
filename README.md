@@ -95,28 +95,3 @@ If 8 are already on disk, this runs 7 more and reports the cumulative total
 only that invocation's own trials — scores still get appended to the same
 `.scores.jsonl` file either way, so nothing is ever lost; `--resume` just
 decides what the *summary* reports and how many *new* trials get attempted.
-
-## Honest gaps in this code, so you don't get surprised mid-run
-
-- **`task_checker_factory` is a stub (`always True`) for every scenario.**
-  The paper's task-success axis needs real grading — did the agent actually
-  produce a correct summary / correct total / correct file listing — which
-  is either an LLM-as-judge call or manual transcript review, not something
-  a file-existence check can do. Wire this in before trusting the TSR column
-  for new scenarios; it's fine as-is only because the Tier-1 TSR numbers
-  already in the paper were graded separately, not by this stub.
-- **Rate limits.** Section 9 already documents that free-tier rate limits
-  capped Nemotron's `n`. `run_benchmark.py` has no backoff/retry logic —
-  add it (or just re-run failed trials) rather than assuming 15/15 will
-  succeed in one pass.
-- **`nemotron-3-super`'s `model_id`** (`nvidia/nemotron-3-super-120b-a12b:free`)
-  is verified against OpenRouter as of 2026-07-18 — but re-check before a
-  run if it's been a while, since free-tier slugs occasionally get renamed
-  or retired.
-- **The T2-Tier2 scenario's `fetch_url` ignores the `url` argument** and
-  always returns the same fixed article — that's intentional (it isolates
-  the injection variable) but worth knowing if you extend it.
-- **No sandbox network isolation is enforced by this code itself** — it
-  relies on you running it inside the same network-isolated sandbox
-  described in Section 5.3. The servers don't make outbound calls, but
-  nothing here stops a future scenario script from adding one by mistake.
